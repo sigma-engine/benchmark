@@ -55,11 +55,12 @@ target_include_directories(benchmark PUBLIC
     )
 target_link_libraries(benchmark_main benchmark)
 
-set(include_install_dir "include")
-set(lib_install_dir "lib/")
-set(bin_install_dir "bin/")
-set(config_install_dir "lib/cmake/${PROJECT_NAME}")
-set(pkgconfig_install_dir "lib/pkgconfig")
+include(GNUInstallDirs)
+set(include_install_dir "${CMAKE_INSTALL_INCLUDEDIR}")
+set(lib_install_dir "${CMAKE_INSTALL_LIBDIR}")
+set(bin_install_dir "${CMAKE_INSTALL_BINDIR}")
+set(config_install_dir "${CMAKE_INSTALL_INCLUDEDIR}/cmake/${PROJECT_NAME}")
+set(pkgconfig_install_dir "${CMAKE_INSTALL_INCLUDEDIR}/pkgconfig")
 
 set(generated_dir "${CMAKE_CURRENT_BINARY_DIR}/generated")
 
