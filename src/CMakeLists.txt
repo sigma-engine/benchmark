@@ -59,8 +59,8 @@ include(GNUInstallDirs)
 set(include_install_dir "${CMAKE_INSTALL_INCLUDEDIR}")
 set(lib_install_dir "${CMAKE_INSTALL_LIBDIR}")
 set(bin_install_dir "${CMAKE_INSTALL_BINDIR}")
-set(config_install_dir "${CMAKE_INSTALL_INCLUDEDIR}/cmake/${PROJECT_NAME}")
-set(pkgconfig_install_dir "${CMAKE_INSTALL_INCLUDEDIR}/pkgconfig")
+set(config_install_dir "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
+set(pkgconfig_install_dir "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
 
 set(generated_dir "${CMAKE_CURRENT_BINARY_DIR}/generated")
 
